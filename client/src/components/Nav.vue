@@ -27,8 +27,24 @@
               Home
             </router-link>
       
-            <router-link class="navbar-item" to="/store">
-              Store
+            <router-link class="navbar-item" to="/useractivty">
+              User Activity
+            </router-link>
+
+            <router-link class="navbar-item" to="/otheractivty">
+              Other Activty
+            </router-link>
+
+            <router-link class="navbar-item" to="/addworkout">
+              Add Workout
+            </router-link>
+
+            <router-link class="navbar-item" to="/generalstatistics">
+              General Statistics
+            </router-link>
+
+            <router-link class="navbar-item" to="/adminpage">
+              Admin Page
             </router-link>
       
             <div class="navbar-item has-dropdown is-hoverable">

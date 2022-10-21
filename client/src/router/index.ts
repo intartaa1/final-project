@@ -16,6 +16,31 @@ const router = createRouter({
       component: () => import('../views/AboutView.vue')
     },
     {
+      path: '/useractivity',
+      name: 'user activity',
+      component: () => import('../views/UserActivity.vue')
+    },
+    {
+      path: '/otheractivty',
+      name: 'other activity',
+      component: () => import('../views/OtherUserActivity.vue')
+    },
+    {
+      path: '/addworkout',
+      name: 'add workout',
+      component: () => import('../views/AddWorkout.vue')
+    },
+    {
+      path: '/generalstatistics',
+      name: 'general statistics',
+      component: () => import('../views/GeneralStatistics.vue')
+    },
+    {
+      path: '/adminpage',
+      name: 'admin page',
+      component: () => import('../views/AdminPage.vue')
+    },
+    {
         path: '/store',
         name: 'store',
         component: StoreView,
