@@ -38,11 +38,11 @@
             <router-link class="navbar-item" to="/addworkout">
               Add Workout
             </router-link>
-
+            
             <router-link class="navbar-item" to="/generalstatistics">
               General Statistics
             </router-link>
-
+        
             <router-link class="navbar-item" to="/admin">
               Admin
             </router-link>

@@ -27,8 +27,8 @@
                         <input type="checkbox" name ="BikeR" id = "BikeR" value="BikeR">
                     <label for = "WalkR"> Walk</label>
                         <input type="checkbox" name ="WalkR" id = "WalkR" value="WalkR">
-                    <label for = "CardioR"> Cardio</label>
-                        <input type="checkbox" name="CardioR" id = "CardioR" value="CardioR">
+                    <label for = "SwimmingR"> Swimming</label>
+                        <input type="checkbox" name="SwimmingR" id = "SwimmingR" value="SwimmingR">
                     <label for = "StrengthR"> Strength</label>
                         <input type="checkbox" name="StrengthR" id= "StrengthR" value="StrengthR">
                 </div>
