@@ -42,10 +42,6 @@
             <router-link class="navbar-item" to="/generalstatistics">
               General Statistics
             </router-link>
-
-            <router-link class="navbar-item" to="/adminpage">
-              Admin Page
-            </router-link>
       
             <div class="navbar-item has-dropdown is-hoverable">
               <a class="navbar-link">
