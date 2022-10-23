@@ -42,12 +42,16 @@
             <router-link class="navbar-item" to="/generalstatistics">
               General Statistics
             </router-link>
-      
+
+            <router-link class="navbar-item" to="/admin">
+              Admin
+            </router-link>
+            
             <div class="navbar-item has-dropdown is-hoverable">
               <a class="navbar-link">
                 More
               </a>
-      
+            
               <div class="navbar-dropdown">
                 <router-link class="navbar-item" to="/about">
                   About
@@ -65,7 +69,7 @@
               </div>
             </div>
           </div>
-      
+        
           <div class="navbar-end">
             <div class="navbar-item">
 
