@@ -16,9 +16,9 @@ const router = createRouter({
       component: () => import('../views/AboutView.vue')
     },
     {
-      path: '/myactivity',
-      name: 'my activity',
-      component: () => import('../views/MyActivity.vue')
+      path: '/thatactivity',
+      name: 'thatactivity',
+      component: () => import('../views/thatActivity.vue')
     },
     {
       path: '/otheractivty',

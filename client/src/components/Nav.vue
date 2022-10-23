@@ -6,7 +6,7 @@
 </script>
 
 <template>
-    <nav class="navbar is-primary" role="navigation" aria-label="main navigation">
+    <nav class="navbar is-dark" role="navigation" aria-label="main navigation">
 
         <div class="container">
         <div class="navbar-brand">
@@ -26,9 +26,9 @@
             <router-link to="/" class="navbar-item">
               Home
             </router-link>
-      
-            <router-link class="navbar-item" to="/myactivty">
-              My Activity
+
+            <router-link class="navbar-item" to="/thatactivity">
+              Activity
             </router-link>
 
             <router-link class="navbar-item" to="/otheractivty">
@@ -85,6 +85,6 @@
 <style>
     .router-link-active {
         
-        border-bottom: #000eaa 5px solid;
+        border-bottom: #fe3314 5px solid;
     }
 </style>
