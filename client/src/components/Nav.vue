@@ -27,8 +27,8 @@
               Home
             </router-link>
       
-            <router-link class="navbar-item" to="/useractivty">
-              User Activity
+            <router-link class="navbar-item" to="/myactivty">
+              My Activity
             </router-link>
 
             <router-link class="navbar-item" to="/otheractivty">
