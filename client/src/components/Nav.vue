@@ -46,6 +46,10 @@
             <router-link class="navbar-item" to="/admin">
               Admin
             </router-link>
+
+            <router-link class="navbar-item" to="/products">
+              Products
+            </router-link>
             
             <div class="navbar-item has-dropdown is-hoverable">
               <a class="navbar-link">
