@@ -5,9 +5,31 @@ export function getProducts() {
 }
 
 export function getProduct(id: number) {
-    return data.products.find( (product) => product.id === id );
+    return getProducts().find( (product) => product.id === id ) as Product;
 }
 
 export function deleteProduct(id: number) {
     data.products = data.products.filter( (product) => product.id !== id );
 }
+
+export interface ProductDocument {
+    products: Product[]
+    total: number
+    skip: number
+    limit: number
+  }
+  
+  export interface Product {
+    id: number
+    title: string
+    description: string
+    price: number
+    discountPercentage: number
+    rating: number
+    stock: number
+    brand: string
+    category: string
+    thumbnail: string
+    images: string[]
+  }
+  
