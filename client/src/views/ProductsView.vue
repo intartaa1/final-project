@@ -1,19 +1,16 @@
 <script setup lang="ts">
     import { computed, reactive, ref, watch } from "vue";
     import { RouterLink } from "vue-router";
-    import { getProducts } from "../stores/products";
-
+    import { getProducts, type Product } from "../stores/products";
     const products = reactive(getProducts());
-
     const search = ref("");
-
     
 </script>
 
 <template>
     <div>
         <div class="control ">
-            <input class="input" type="text" placeholder="Search" v-model="search"/>
+            <input class="input" type="text" placeholder="Search" v-model="search"  />
         </div>
         
         <div class="products">
@@ -37,28 +34,27 @@
 </template>
 
 <style scoped>
-
     .products {
-        dislay: flex;
+        display: flex;
         flex-wrap: wrap;
         background-color: aliceblue;
     }
-
     .product {
         flex-basis: 10em;
         margin: 1em;
         padding: 1em;
-        border: 1px solid #ccc;
+        border: 1px solid #000;
         border-radius: 5px;
         background-color: #fff;
     }
-
     .product-info {
         font-size: small;
     }
-
     .price {
         display: flex;
         align-items: flex-start;
+    }
+    .amount {
+        font-size: x-large;
     }
 </style>
