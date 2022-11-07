@@ -6,7 +6,14 @@
 
     const route = useRoute();
     
-    const product = ref(getProduct(+route.params.id));
+    const product = ref(null as Product | null);
+
+    getProduct(+route.params.id).then(x => 
+        product.value = x
+        console.log('The fetch returned');
+    ));
+
+    console.log('The fetch was called');
 
 </script>
 
