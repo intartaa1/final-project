@@ -1,18 +1,19 @@
 const express = require('express');
-const { get, add, remove } = require('../models/cart');
+const { get, add, update } = require('../models/cart');
 
 const app = express.Router();
+
 
 app.get('/', (req, res) => {
     res.send(get(req.params.userId));
 });
 
 app.post('/:userId/:porductId/:quantity', (req, res) => {
-    res.send(add(req.params.porductId, req.params.userId, req.params.quantity));
+    res.send(add(req.params.userId, +req.params.productId, +req.params.quantity));
 });
 
-app.delete('/:userId/:productId', (req, res) => {
-    res.send(remove(req.params.productId, req.params.productId));
+app.patch('/:userId/:productId', (req, res) => {
+    res.send(update(req.params.userId, +req.params.productId, +req.params.quantity));
 });
 
 module.exports = app;
