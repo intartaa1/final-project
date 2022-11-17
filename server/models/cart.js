@@ -43,12 +43,13 @@ const update = (userId, productId, quantity) => {
   if (index !== -1) {
     if(quantity === 0) {
         list.splice(index, 1);
+        return "null";
     } else {
         list[index].quantity = quantity;
-  } else {
+    }else {
         throw new Error('Cart item not found');
     }
-  return index;
+  return { ...list[index], product: getProduct(productId) };
 }
 
 module.exports = { add, get, update }

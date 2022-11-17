@@ -4,15 +4,15 @@ const { get, add, update } = require('../models/cart');
 const app = express.Router();
 
 
-app.get('/', (req, res) => {
+app.get('/:userId', (req, res) => {
     res.send(get(req.params.userId));
 });
 
-app.post('/:userId/:porductId/:quantity', (req, res) => {
-    res.send(add(req.params.userId, +req.params.productId, +req.params.quantity));
+app.post('/:userId', (req, res) => {
+    res.send(add(req.params.userId, +req.body.productId, +req.body.quantity));
 });
 
-app.patch('/:userId/:productId', (req, res) => {
+app.patch('/:userId/:productId/:quantity', (req, res) => {
     res.send(update(req.params.userId, +req.params.productId, +req.params.quantity));
 });
 
