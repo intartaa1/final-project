@@ -5,7 +5,7 @@ import vue from "@vitejs/plugin-vue";
 import vueJsx from "@vitejs/plugin-vue-jsx";
 
 // https://vitejs.dev/config/
-export default defineConfig({
+/* export default defineConfig({
   plugins: [vue(), vueJsx()],
   resolve: {
     alias: {
@@ -15,3 +15,4 @@ export default defineConfig({
   build:
     outDir: fileURLToPath(new URL('../server/dist', import.meta.url))
 });
+*/
