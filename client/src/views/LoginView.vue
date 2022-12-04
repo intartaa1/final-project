@@ -1,5 +1,5 @@
 <script setup lang="ts">
-    import { login } from '@/stores/session';
+    import { login } from "@/stores/session";
     import { ref } from 'vue';
 
     const email = ref('');
@@ -36,3 +36,7 @@
         </form>
     </div>
 </template>
+
+<style scoped>
+
+</style>
