@@ -53,16 +53,6 @@
               </a>
             
               <div class="navbar-dropdown">
-                <router-link class="navbar-item" to="/about">
-                  About
-                </router-link>
-                <a class="navbar-item">
-                  Jobs
-                </a>
-                <a class="navbar-item">
-                  Contact
-                </a>
-                <hr class="navbar-divider">
                 <a class="navbar-item">
                   Report an issue
                 </a>
@@ -70,11 +60,18 @@
             </div>
           </div>
 
+          <div class="navbar-end">
+            <div class="navbar-item">
+              <button class="button is-primary" @click="isCartOpen = !isCartOpen">
+                <router-link to="/login">Login</router-link>
+              </button>
+              </div>
+              <div class="navbar-item">
               <login-badge></login-badge>
             </div>
           </div>
-        </div>
-        </div>
+            </div>
+          </div>
       </nav>
 
 </template>
