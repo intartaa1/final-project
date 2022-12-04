@@ -63,13 +63,24 @@
           <div class="navbar-end">
             <div class="navbar-item">
               <button class="button is-primary" @click="isCartOpen = !isCartOpen">
-                <router-link to="/login">Login</router-link>
+                <router-link to="/signup">Sign Up</router-link>
               </button>
               </div>
               <div class="navbar-item">
               <login-badge></login-badge>
             </div>
           </div>
+            </div>
+          </div>
+
+          <div class="navbar-end">
+            <div class="navbar-item">
+              <button class="button is-primary" @click="isCartOpen = !isCartOpen">
+                <router-link to="/login">Login</router-link>
+              </button>
+              </div>
+              <div class="navbar-item">
+              <login-badge></login-badge>
             </div>
           </div>
       </nav>
