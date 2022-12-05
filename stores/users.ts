@@ -1,7 +1,7 @@
 import { api } from "./session";
 
-export function getUsers(){
-
+export function getUsers(id: string){
+    return api<User>
 }
 
 export interface User {
