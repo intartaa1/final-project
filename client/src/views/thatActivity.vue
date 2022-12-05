@@ -9,7 +9,7 @@
         <div class="container">
             <strong>Antonio Intartaglia</strong> @intartaa1 Sunday, October 23rd, 2022
             <p>Jogged along the Rail Trail</p>
-            <img src ="jog.JPG" alt = "jog" />
+           <img src ="jog.JPG" alt = "jog" />
         </div>
     </section>
     <section class="section">
