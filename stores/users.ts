@@ -1,6 +1,6 @@
 import { api } from "./session";
 
-export function getUsers(id: string){
+export function getUsers(name: string){
     return api<User>
 }
 

@@ -1,0 +1,26 @@
+{
+    "users": [
+    {
+        "first name": "Antonio",
+        "last name": "Intartaglia",
+        "email": "intartaa1@newpaltz.edu",
+        "handle": "Intartaglia, Antonio",
+        "isAdmin": "true"
+        
+    },
+    {
+        "first name": "Moshe",
+        "last name": "Plotkin",
+        "email": "plotkinm1@newpaltz.edu",
+        "handle": "Plotkin, Moshe",
+        "isAdmin": "true"
+    }
+    {
+        "first name": "Lenore",
+        "last name": "Perez",
+        "email": "lenoreperez@gmail.com",
+        "handle": "Perez, Lenore",
+        "isAdmin": "false"
+    }
+    ]
+}
