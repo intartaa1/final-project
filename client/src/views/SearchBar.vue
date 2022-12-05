@@ -2,7 +2,7 @@
     import { isLoading } from "@/stores/session";
     import { computed, reactive, ref, watch } from "vue";
     import { RouterLink } from "vue-router";
-    import { getUsers, type User } from "../stores/products";
+    import { getUsers, type User } from "../stores/users";
 
     const users = reactive([] as User[]);
     getUsers().then( x => users.push(...x.users));
