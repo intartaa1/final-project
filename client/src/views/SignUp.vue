@@ -71,7 +71,7 @@
             <div class="field">
                 <label class="label">User Handle</label>
                 <div class="control">
-                <input class="input" type="email" placeholder="e.g. alex@example.com" v-model="handle">
+                <input class="input" type="email" placeholder="e.g. Smith, John" v-model="handle">
                 </div>
             </div>
 
