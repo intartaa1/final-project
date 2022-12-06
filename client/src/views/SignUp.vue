@@ -60,7 +60,7 @@
 
 <template>
     <div>
-        <form class="box">
+        <form class="box" @submit.prevent="signUp(name, handle, email, password,)">
             <div class="field">
                 <label class="label">Name</label>
                 <div class="control">
@@ -96,7 +96,7 @@
                 </div>
             </div>
 
-            <button class="button-is-primary">Sign In</button>
+            <button @click="signUp(name, handle, email, password)">Sign Up</button>
         </form>
     </div>
 </template>
