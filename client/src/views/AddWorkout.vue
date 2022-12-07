@@ -44,3 +44,18 @@
         </form>
     </div>
 </template>
+
+<script>
+    export default {
+        name: 'AddWorkout',
+        data() {
+            return {
+                title: '',
+                date: '',
+                duration: '',
+                location: '',
+                type: ''
+            }
+        }
+    }
+</script>

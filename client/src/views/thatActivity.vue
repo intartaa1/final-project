@@ -20,3 +20,15 @@
         </div>
     </section>
 </template>
+
+<script>
+    export default {
+        name: "Activities"
+    }
+</script>
+
+<style scoped>
+    .section {
+        background-color: #f5f5f5;
+    }
+</style>

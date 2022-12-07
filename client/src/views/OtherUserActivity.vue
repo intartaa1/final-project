@@ -55,3 +55,14 @@
 <style lang="scss" scoped>
 
 </style>
+
+<script>
+export default {
+    name: 'Friends',
+    data() {
+        return {
+            msg: 'Welcome to Your Vue.js App'
+        }
+    }
+}
+</script>
