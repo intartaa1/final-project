@@ -6,7 +6,7 @@
 </script>
 
 <template>
-    <nav class="navbar is-dark" role="navigation" aria-label="main navigation">
+    <nav class="navbar is-light" role="navigation" aria-label="main navigation">
 
         <div class="container">
         <div class="navbar-brand">
@@ -93,6 +93,6 @@
 <style>
     .router-link-active {
         
-        border-bottom: #fe3314 5px solid;
+        border-bottom: #3cb371 5px solid;
     }
 </style>
