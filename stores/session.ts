@@ -51,6 +51,7 @@ export function signup(name: string, handle: string, email: string, password: st
 export function logout(){
     session.user=null;
 }
+
 export interface User{
     name: string;
     handle: string;
