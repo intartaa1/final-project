@@ -68,7 +68,9 @@
         </div>
    </div>      
   <br><br>
-        <button class="on-button">+Add User</button>
+        <button class="on-button">+Add User
+            <router-link to="/admin"> </router-link>
+        </button>
    
 
 </template>
