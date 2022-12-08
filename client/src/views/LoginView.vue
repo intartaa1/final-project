@@ -32,7 +32,11 @@
                 </div>
             </div>
 
-            <button class="button-is-primary">Sign in</button>
+            <div class="buttons">
+            <RouterLink class="button is-primary" to="/">
+                Sign In
+            </RouterLink>
+        </div>
         </form>
     </div>
 </template>

@@ -96,7 +96,11 @@
                 </div>
             </div>
 
-            <button @click="signUp(name, handle, email, password)">Sign Up</button>
+            <div class="buttons">
+            <RouterLink class="button is-primary" to="/">
+                Sign Up
+            </RouterLink>
+        </div>
         </form>
     </div>
 </template>
