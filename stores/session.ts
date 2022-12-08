@@ -59,6 +59,22 @@ export interface User{
     password: string;
 }
 
+export interface AddUserInfo{
+    firstName: string;
+    lastName: string;
+    handle: string;
+    email: string;
+}
+
+export function addInfo(firstName: string, lastName: string, handle: string, email: string){
+    session.user = {
+        firstName,
+        lastName,
+        handle,
+        email,
+    }
+}
+
 export interface Message {
     text: string;
     type: 'danger' | 'warning' | 'success' | 'info';
