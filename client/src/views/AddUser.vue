@@ -39,7 +39,11 @@
                 </div>
             </div>
 
-            <button to="/user">Save</button>
+            <div class="buttons">
+            <RouterLink class="button is-light" to="/admin">
+                Save
+            </RouterLink>
+        </div>
         </form>
     </div>
 </template>

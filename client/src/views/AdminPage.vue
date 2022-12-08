@@ -1,3 +1,7 @@
+<script setup lang="ts">
+
+</script>
+
 <template>
     <div class="columns">
         <div class="column">
@@ -68,9 +72,14 @@
         </div>
    </div>      
   <br><br>
-        <button class="on-button">+Add User
-            <router-link to="/admin"> </router-link>
-        </button>
-   
+        <div class="buttons">
+            <RouterLink class="button is-primary" to="/adduser">
+                + Add User
+            </RouterLink>
+        </div>
 
 </template>
+
+<style scoped>
+
+</style>
