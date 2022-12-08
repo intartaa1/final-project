@@ -50,6 +50,11 @@ const router = createRouter({
       name: 'login',
       component: LoginViewVue,
     },
+    {
+      path: '/adduser',
+      name: 'adduser',
+      component: () => import('../views/AddUser.vue')
+    }
   ]
 })
 
