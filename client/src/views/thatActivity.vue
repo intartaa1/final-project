@@ -9,23 +9,18 @@
         <div class="container">
             <strong>Antonio Intartaglia</strong> @intartaa1 Sunday, December 4th, 2022
             <p>Jogged along the Rail Trail</p>
-           <img src ="../assets/jog.JPG" alt = "jog" />
+           <img src="../assets/jog.jpg" alt = "jog" />
         </div>
     </section>
     <section class="section">
         <div class="container">
             <strong>Antonio Intartaglia</strong> @intartaa1 Wednesday, November 30th, 2022
             <p>Skateboarding at the park on my day off from classes!</p>
-            <img src="../assets/skateboarding.JPG" alt = "skateboarding" />
+            <img src="../assets/skateboarding.jpg" alt = "skateboarding" />
         </div>
     </section>
 </template>
 
-<script>
-    export default {
-        name: "Activities"
-    }
-</script>
 
 <style scoped>
     .section {
