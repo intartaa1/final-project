@@ -3,7 +3,7 @@
 </script>
 <template>
     <div>
-        <form class="box" @submit.prevent="signUp(name, handle, email, password,)">
+        <form class="box" @submit.prevent="signUp(name, handle, email, admin,)">
             <div class="field">
                 <label class="label">First Name</label>
                 <div class="control">
