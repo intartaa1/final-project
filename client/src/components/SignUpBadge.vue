@@ -1,7 +1,7 @@
 <script setup lang="ts">
 
 import {RouterLink} from 'vue-router';
-import session,{ signUp, logout } from '@/stores/session';
+import session, { signUp, logout } from '@/stores/session';
 import { ref } from 'vue';
 
 const email = ref('');

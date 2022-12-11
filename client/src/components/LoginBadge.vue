@@ -1,5 +1,5 @@
 <script setup lang="ts">
-    import session, { login, logout } from '../stores/session';
+    import session, { login, logout } from '@/stores/session'
 </script>
 <template>
     <div class="dropdown is-hoverable">
@@ -22,4 +22,5 @@
                 </a>
                 </div>
             </div>
+        </div>
 </template>
