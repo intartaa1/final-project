@@ -1,6 +1,8 @@
 import { api } from "./session";
 
-
+export function getUsers(){
+    return api<User>('users');
+}
 
 export function getUser(name: string){
     return api<User>('users/${name}')
