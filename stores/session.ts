@@ -1,3 +1,4 @@
+import myFetch from "@/services/myFetch";
 import { computed, reactive } from "vue";
 
 const session = reactive ({
@@ -39,7 +40,7 @@ export function login(name: string, email: string, password: string) {
     };
 }
 
-export function signup(name: string, handle: string, email: string, password: string) {
+export function signUp(name: string, handle: string, email: string, password: string) {
     session.user = {
         name,
         handle,
