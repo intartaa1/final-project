@@ -1,6 +1,6 @@
 <script setup lang="ts">
     import session, { api, login } from '@/stores/session';
-    import { ref, watch } from 'vue';
+    import { ref, watch } from "vue";
     import { useRoute, useRouter } from "vue-router";
     import { addUser, getUser, updateUser, type User } from '@/stores/users';
 
