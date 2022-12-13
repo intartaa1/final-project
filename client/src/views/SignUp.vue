@@ -15,6 +15,14 @@
     const user = ref({} as User);
     const isNew = ref(route.params.id == 'new')
 
+    async function signUp(name: string, handle: string, email: string, password: string) {
+        try {
+            session.messages.push({ type: "success", text: "Succesfully signed up!" });
+        } catch (error) {
+            session.messages.push({ type: "error", text: "Error signing up, please try again." });
+        }
+    }
+
     /*if(!isNew.value){
         getUser(route.params.id as string).then(x => {
             if(x){

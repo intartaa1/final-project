@@ -1,7 +1,7 @@
 <script setup lang="ts">
     import { isLoading } from '@/stores/session';
-    import { computed, reactive, ref, watch } from "vue";
-    import { RouterLink } from "vue-router";
+    import { computed, reactive, ref, watch } from 'vue';
+    import { RouterLink } from 'vue-router';
     import { getUsers, type User } from '../stores/users';
 
     const users = reactive([] as User[]);

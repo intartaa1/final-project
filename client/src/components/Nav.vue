@@ -3,6 +3,7 @@
     import { RouterLink } from 'vue-router';
 
     const isActive = ref(false);
+    const isCartOpen = ref(false);
 </script>
 
 <template>
