@@ -1,6 +1,6 @@
 <script setup lang="ts">
 
-import {RouterLink} from 'vue-router';
+import { RouterLink } from 'vue-router';
 import session, { signUp, logout } from '@/stores/session';
 import { ref } from 'vue';
 
@@ -11,7 +11,7 @@ const handle = ref('');
 </script>
 
 <template>
-    <div class="button" v-if="session.user=null">
+    <div class="button" v-if="session.user==null">
         <button class="button is-primary" @click="signUp(name, handle, email, password)">
             <router-link to="/signup" >Sign Up</router-link>
         </button>
