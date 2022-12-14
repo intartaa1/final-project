@@ -20,7 +20,7 @@
             <RouterLink v-for="user in users" :key="user.name"
                         class="user" :class="{ 'is-disabled': isLoading }"
                         :to="'/user/${user.name}'"
-                        v-show="user.title.toLowerCase().includes(search.toLowerCase())">
+                        v-show="user.name.toLowerCase().includes(search.toLowerCase())">
                     </RouterLink>
         </div>
     </div>
