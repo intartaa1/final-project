@@ -32,9 +32,10 @@ export async function api<T>(url: string, data: any = null, method?: string ){
     return {} as T;
 }
 
-export function login(name: string, email: string, password: string) {
+export function login(name: string, handle: string, email: string, password: string) {
     session.user = {
        name,
+       handle,
        email,
        password,
     };
@@ -67,12 +68,12 @@ export interface AddUserInfo{
     email: string;
 }
 
-export function addInfo(firstName: string, lastName: string, handle: string, email: string){
+export function addInfo(name: string, handle: string, email: string, password: string){
     session.user = {
-        firstName,
-        lastName,
+        name,
         handle,
         email,
+        password,
     }
 }
 

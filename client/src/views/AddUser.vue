@@ -1,20 +1,27 @@
 <script setup lang="ts">
+    import { ref } from 'vue';
+
+    const firstName = ref('');
+    const lastName = ref('');
+    const handle = ref('');
+    const email = ref('');
+    const admin = ref('');
 
 </script>
 <template>
     <div>
-        <form class="box" @submit.prevent="signUp(name, handle, email, admin,)">
+        <form class="box" @submit.prevent="signUp(firstName, lastName, handle, email, admin,)">
             <div class="field">
                 <label class="label">First Name</label>
                 <div class="control">
-                <input class="input" type="text" placeholder="First Name" v-model="name">
+                <input class="input" type="text" placeholder="First Name" v-model="firstName">
                 </div>
             </div>
 
             <div class="field">
                 <label class="label">Last Name</label>
                 <div class="control">
-                <input class="input" type="text" placeholder="Last Name" v-model="name">
+                <input class="input" type="text" placeholder="Last Name" v-model="lastName">
                 </div>
             </div>
 
