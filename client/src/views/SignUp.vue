@@ -19,7 +19,7 @@
         try {
             session.messages.push({ type: "success", text: "Succesfully signed up!" });
         } catch (error) {
-            session.messages.push({ type: "error", text: "Error signing up, please try again." });
+            session.messages.push({ type: "danger", text: "Error signing up, please try again."});
         }
     }
 
