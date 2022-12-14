@@ -7,6 +7,50 @@
     const email = ref('');
     const admin = ref('');
 
+    function isValidEmail(email: string) {
+      const emailRegex = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?(?:\.[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?)*$/;
+      return emailRegex.test(email);
+    }
+
+    async function saveUser(user: any) {
+    try {
+        const response = await fetch('/api/users', {
+        method: 'POST',
+        body: JSON.stringify(user),
+        headers: {
+            'Content-Type': 'application/json'
+        }
+        });
+        const result = await response.json();
+        if (response.ok) {
+        console.log(`User ${user.handle} saved successfully`);
+        } else {
+        console.error(result.message);
+        }
+    } catch (err) {
+        console.error(err);
+    }
+    }
+
+
+    function signUp(firstName: any, lastName: any, handle: any, email: any, admin: any) {
+        if (!isValidEmail(email)) {
+            return;
+        }
+        if (admin !== "Yes" && admin !== "No") {
+            return;
+        }
+        const user = {
+            firstName,
+            lastName,
+            handle,
+            email,
+            admin: admin === "Yes"
+        };
+
+        saveUser(user);
+    }
+
 </script>
 <template>
     <div>
