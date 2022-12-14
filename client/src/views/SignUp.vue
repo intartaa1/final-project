@@ -2,7 +2,7 @@
     import session, { api, login } from '@/stores/session';
     import { ref, watch } from "vue";
     import { useRoute, useRouter } from "vue-router";
-    import { addUser, getUser, updateUser, type User } from '@/stores/users';
+    //import { addUser, getUser, updateUser, type User } from '../stores/users';
 
     const email = ref('');
     const password = ref('');
