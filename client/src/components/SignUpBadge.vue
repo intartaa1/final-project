@@ -1,13 +1,12 @@
 <script setup lang="ts">
+    import { RouterLink } from 'vue-router';
+    import session, { signUp, logout } from '@/stores/session';
+    import { ref } from 'vue';
 
-import { RouterLink } from 'vue-router';
-import session, { signUp, logout } from '@/stores/session';
-import { ref } from 'vue';
-
-const email = ref('');
-const password = ref('');
-const name = ref('');
-const handle = ref('');
+    const email = ref('');
+    const password = ref('');
+    const name = ref('');
+    const handle = ref('');
 </script>
 
 <template>

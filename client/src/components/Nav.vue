@@ -4,6 +4,7 @@
 
     const isActive = ref(false);
     const isCartOpen = ref(false);
+    const search = ref('');
 </script>
 
 <template>
