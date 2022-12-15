@@ -1,6 +1,8 @@
 <script setup lang="ts">
-    import { }
+    import { isLoading } from '@/stores/session'; 
     import { ref, watch } from 'vue';
+    import { RouterLink } from 'vue-router';
+    import { getUsers, type User } from '../stores/users';
 </script>
 
 <template>
@@ -60,8 +62,8 @@
         ,watch: {
             items: function (value, oldValue) {
                 if (value.length !== oldValue.length) {
-                    this.results = value;
-                    this.isLoading = false;
+                    this(any).results = value;
+                    this(any).isLoading = false;
                 }
                 }
             },
