@@ -19,9 +19,9 @@ app.use('/', express.static('./client/dist'));
 app.use(express.json());
 
 app
-.get('/', (req, res) => {
-    res.status(200).send('Happy Sweet New Year');
-})
+// .get('/', (req, res) => {
+//     res.status(200).send('Happy Sweet New Year');
+// })
 .get('/error', (req, res) => {
     sss.PORT();
 })
@@ -42,5 +42,5 @@ app.use((err, req, res, next) => {
 })
 
 app.listen(port, ()=> {
-    console.log('Server running at http://${hostname}:${port}/');
+    console.log(`Server running at http://${hostname}:${port}/`);
 });
