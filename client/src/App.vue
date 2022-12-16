@@ -1,8 +1,7 @@
 <script setup lang="ts">
-import { RouterLink, RouterView } from "vue-router";
-import NavVue from './components/Nav.vue'
-
-
+    import { RouterView } from 'vue-router'
+    import NavVue from './components/Nav.vue';
+    //import SearchAutocomplete from './components/SearchAutocomplete.vue';
 </script>
 
 <template>
@@ -10,12 +9,25 @@ import NavVue from './components/Nav.vue'
     <NavVue />
   </header>
 
-<div class="container">
-  <RouterView />
-</div>
+  <div id="app">
+    <SearchAutocomplete
+     :items="[
+      'Bike Riding',
+      'Deadlifting',
+      'Fishing',
+      'Jogging',
+      'Rollerskating',
+      'Skatebaording'
+     ]"
+     />
+  </div>
+
+
+  <div class="container">
+    <RouterView />
+  </div>
 
 </template>
 
 <style scoped>
-
 </style>

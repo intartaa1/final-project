@@ -1,9 +1,9 @@
 <script setup lang="ts">
-import TheWelcome from "../components/TheWelcome.vue";
 </script>
 
 <template>
   <main>
-    <TheWelcome />
+    <h1 class="title">Home Page</h1>
+    <h2 class="subtitle">Welcome to my Fitness Website!</h2>
   </main>
 </template>
