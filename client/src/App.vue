@@ -1,7 +1,7 @@
 <script setup lang="ts">
     import { RouterView } from 'vue-router'
     import NavVue from './components/Nav.vue';
-    import SearchAutocomplete from './components/SearchAutocomplete.vue';
+    //import SearchAutocomplete from './components/SearchAutocomplete.vue';
 </script>
 
 <template>

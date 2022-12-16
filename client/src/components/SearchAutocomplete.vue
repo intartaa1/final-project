@@ -58,7 +58,7 @@
       data() {
         return {
           isOpen: false,
-          results: [],
+          results: [] as string[],
           search: '',
           isLoading: false,
           arrowCounter: -1,
@@ -84,7 +84,7 @@
           this.isOpen = false;
         },
         filterResults() {
-          this.results = this.items.filter((item) => {
+          this.results = (this.items as string[]).filter((item: string) => {
             return item.toLowerCase().indexOf(this.search.toLowerCase()) > -1;
           });
         },
